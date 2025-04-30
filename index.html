@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Semantic Blog</title>
+  <style>
+    /* General Reset and Base Styles */
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-color: #fefefe;
+    }
+
+    /* Navbar */
+    nav {
+      background: #343a40;
+      color: white;
+      padding: 15px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-right: 20px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Header */
+    header {
+      background-color: #f8f9fa;
+      padding: 40px 20px;
+      text-align: center;
+      border-bottom: 1px solid #ddd;
+    }
+
+    /* Main Layout */
+    main {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 20px;
+      gap: 20px;
+    }
+
+    section {
+      flex: 2;
+      min-width: 250px;
+    }
+
+    article {
+      background: #ffffff;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    /* Sidebar */
+    aside {
+      flex: 1;
+      min-width: 200px;
+      background-color: #f1f1f1;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    aside h3 {
+      margin-top: 0;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #343a40;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+    }
+
+    /* Section Padding */
+    section, aside, footer {
+      scroll-margin-top: 80px; /* Prevent content from hiding behind sticky nav */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#blog">Blog</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Header Section -->
+  <header id="home">
+    <h1>My Semantic Blog</h1>
+    <p>Sharing ideas, stories, and code with the world</p>
+  </header>
+
+  <!-- Main Content Area -->
+  <main>
+    <!-- Blog Section -->
+    <section id="blog">
+      <article>
+        <h2>Welcome to My Blog</h2>
+        <p>This is my first blog post using semantic HTML5 elements. It’s readable, accessible, and SEO-friendly.</p>
+      </article>
+
+      <article>
+        <h2>Why Use Semantic HTML?</h2>
+        <p>Semantic tags help both developers and browsers understand the structure of the content clearly.</p>
+      </article>
+    </section>
+
+    <!-- Sidebar -->
+    <aside id="about">
+      <h3>About Me</h3>
+      <p>I’m a web enthusiast who enjoys teaching and building simple, meaningful websites.</p>
+
+      <h3>Popular Posts</h3>
+      <ul>
+        <li><a href="#">Getting Started with HTML</a></li>
+        <li><a href="#">CSS Tips for Beginners</a></li>
+      </ul>
+    </aside>
+  </main>
+
+  <!-- Footer -->
+  <footer id="contact">
+    <p>&copy; 2025 My Blog. All rights reserved.</p>
+    <p>Email: info@myblog.com</p>
+  </footer>
+
+</body>
+</html>
